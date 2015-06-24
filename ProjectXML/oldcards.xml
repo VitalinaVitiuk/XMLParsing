@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oldcards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:myspace="http://www.w3.org"
+ xsi:schemaLocation="http://www.w3.org oldcards.xsd" xmlns="http://www.w3.org">
+
+    <?xml-stylesheet type="text/xsl" href="oldcards.xsl"?>
+    
+    <postcard id="isbn-08362174621" xmlns:myspace="http://www.w3.org">
+        <type>GREETING</type>
+        <theme>Christmas</theme>
+        <country>USA</country>
+        <year>1962</year>
+        <author>Harrison Fisher</author>
+        <myspace:worth>
+            <myspace:value>Collection</myspace:value>
+            <myspace:price>45$</myspace:price>
+        </myspace:worth>
+    </postcard>
+    
+    <postcard id="isbn-08362174622" xmlns:myspace="http://www.w3.org">
+        <type>ADVERTISING</type>
+        <theme>Food</theme>
+        <country>France</country>
+        <year>1981</year>
+        <author>Unknown</author>
+        <myspace:worth>
+            <myspace:value>Collection</myspace:value>
+            <myspace:price>20$</myspace:price>
+        </myspace:worth>
+    </postcard>
+    
+    <postcard id="isbn-08362174623" xmlns:myspace="http://www.w3.org">
+        <type>LEAFLET</type>
+        <theme>Military</theme>
+        <country>Germany</country>
+        <year>1942</year>
+        <author>Unknown</author>
+        <myspace:worth>
+            <myspace:value>Historial</myspace:value>
+            <myspace:price>180$</myspace:price>
+        </myspace:worth>
+    </postcard>
+    
+    <postcard id="isbn-08362174624" xmlns:myspace="http://www.w3.org">
+        <type>ADVERTISING</type>
+        <theme>Cosmetics</theme>
+        <country>Spain</country>
+        <year>1994</year>
+        <author>Anna Vargas</author>
+        <myspace:worth>
+            <myspace:value>Collection</myspace:value>
+            <myspace:price>50$</myspace:price>
+        </myspace:worth>
+    </postcard>
+    
+</oldcards>

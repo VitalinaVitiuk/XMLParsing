@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:myspace="http://www.w3.org"
+targetNamespace="http://www.w3.org" 
+elementFormDefault="qualified">
+    
+    <xs:element name="oldcards" type="myspace:rootType"/>
+    
+          <xs:complexType name="rootType">
+            <xs:sequence>
+           <xs:element name="postcard" minOccurs="1" maxOccurs="unbounded">
+               <xs:complexType>
+                   <xs:sequence>
+                        <xs:element name="type" type="myspace:TypeOfCard"></xs:element>
+                        <xs:element name="theme" type="xs:string"></xs:element>
+                        <xs:element name="country" type="xs:string"></xs:element>
+                        <xs:element name="year" type="xs:string"></xs:element>
+                        <xs:element name="author" type="xs:string"></xs:element>
+                        <xs:element name="worth" type="myspace:worth"></xs:element>
+                   </xs:sequence> 
+                   <xs:attribute name="id" type='xs:ID' use="required"></xs:attribute>
+               </xs:complexType>
+         </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    
+                <xs:complexType name="worth">
+                    <xs:sequence>
+                        <xs:element name="value" type="xs:string"></xs:element>
+                        <xs:element name="price" type="xs:string"></xs:element>     
+                    </xs:sequence>
+                </xs:complexType>
+   
+ 
+    <xs:simpleType name="TypeOfCard">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="GREETING"></xs:enumeration>
+            <xs:enumeration value="ADVERTISING"></xs:enumeration>
+            <xs:enumeration value="LEAFLET"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+        
+</xs:schema>
